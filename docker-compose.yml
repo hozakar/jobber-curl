@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  jobber:
+    restart: unless-stopped
+    image: hozakar/jobber-curl
+    container_name: jobber
+    volumes:
+      - ./jobs/.jobs:/home/jobberuser/.jobs
